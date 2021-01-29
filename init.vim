@@ -13,6 +13,8 @@ Plug 'preservim/nerdtree'
 Plug 'ruanyl/vim-gh-line'
 Plug 'tpope/vim-fugitive'
 Plug 'stephpy/vim-yaml'
+Plug 'sebdah/vim-delve'
+Plug 'benmills/vimux'
 call plug#end()
 
 let g:gh_line_map = '<leader>hh'
@@ -66,7 +68,7 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 "       \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
 "       \ <SID>check_back_space() ? "\<TAB>" :
 "       \ coc#refresh()
-
+let g:delve_use_vimux = 1
 map <C-k> :GoDeclsDir<cr>
 nmap gf :GoFillStruct<cr>
 let g:go_fmt_command = "goimports"
