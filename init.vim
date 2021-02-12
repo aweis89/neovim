@@ -15,6 +15,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'stephpy/vim-yaml'
 Plug 'sebdah/vim-delve'
 Plug 'benmills/vimux'
+Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
 let g:gh_line_map = '<leader>hh'
@@ -23,8 +24,10 @@ set termguicolors
 set autoindent
 set ignorecase
 set number
-" colorscheme desert
-colorscheme bat
+
+colorscheme desert
+" colorscheme bat
+" colorscheme solarized
 
 nmap <Leader>f [fzf-p]
 xmap <Leader>f [fzf-p]
@@ -33,7 +36,7 @@ nnoremap <C-p> :FzfPreviewFromResources project_mru git<CR>
 
 
 nmap <C-n> :NERDTreeToggle<cr>
-nmap rr :source ~/.vimrc<cr>
+nmap rr :source ~/.config/nvim/init.vim<cr>
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by

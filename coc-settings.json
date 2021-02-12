@@ -1,6 +1,7 @@
 
 {
   "codeLens.enable": true,
+  "snippets.ultisnips.usePythonx": false,
   "diagnostic.errorSign": ">>",
   "diagnostic.warningSign": "->",
   "diagnostic.infoSign": "->",
