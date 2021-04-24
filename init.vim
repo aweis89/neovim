@@ -18,6 +18,7 @@ Plug 'sebdah/vim-delve'
 Plug 'benmills/vimux'
 Plug 'altercation/vim-colors-solarized'
 Plug 'rakr/vim-one'
+Plug 'dag/vim-fish'
 call plug#end()
 
 let g:gh_line_map = '<leader>hh'
@@ -121,7 +122,7 @@ au BufNewFile,BufRead Jenkinsfile set filetype=groovy
 
 
 
-let g:coc_global_extensions = ["coc-go", "coc-prettier", "coc-eslint", "coc-tsserver", "coc-json", "coc-git"]
+" let g:coc_global_extensions = ["coc-go", "coc-prettier", "coc-eslint", "coc-tsserver", "coc-json", "coc-git"]
 
 function! s:GoToDefinition()
   if CocAction('jumpDefinition')
