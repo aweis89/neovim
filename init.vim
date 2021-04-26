@@ -112,6 +112,10 @@ let g:go_highlight_functions = 1
 let g:go_highlight_function_calls = 1
 let g:go_highlight_operators = 0 
 let g:go_highlight_extra_types = 0
+
+map ga :GoAlternate<cr>
+map tt :GoTest<cr>
+cmap gd GoDebug
 " autocmd BufWritePost *.go :GoErrCheck!
 
 nmap s <Plug>(easymotion-s)
